@@ -1,0 +1,4 @@
+menuentry "Windows" --class windows --class os {
+    search --fs-uuid --no-floppy --set=root UUID_Here
+  chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+}
